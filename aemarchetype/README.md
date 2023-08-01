@@ -1,0 +1,1 @@
+## Build and place the latest AEM archetype in this folder
