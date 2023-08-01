@@ -16,8 +16,6 @@ What you will need to do this practical test.
 - Java 11.x
 - Maven 3.8.3
 - Docker 20.10.23
-- NodeJS 14.18.x
-- npm 8.19.2
 
 ### Question 1
 
