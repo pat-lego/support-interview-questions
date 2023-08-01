@@ -35,12 +35,19 @@ Using the following [AEM Archetype](https://github.com/adobe/aem-project-archety
 - The project must be buildable with `Java 11`
 - Keep the command used to build the archetype and add it to aemarchetype/README.md
 
-### Apache Sling Site
+### Question 2
+#### Apache Sling Site
 
 - Make sure you have docker running on your local machine
 - Go to the following page https://sling.apache.org/downloads.cgi#sling-application Oak-Tar `docker run --rm -p 8080:8080 apache/sling:snapshot`
-- Create a component with the content of the following file `sling/apps/interview/helloworld/helloworld.html`, make sure that the folder structure for the component is `apps/interview/helloworld`. Copy/paste each command used in the sling/README.md file
-- Create a sling:OrderedFolder under /content named interview and set the sling:resourceType to the component created in the step above
+  - Once this is started you can open your browser and go to http://localhost:8080
+- Create the following folder tree under the apps folder `/interview/helloworld` using only the Apache Sling POST servlet.
+  - Here is the documentation for the Apache Sling Post Servlet (https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html), which means you can only use curl or a restful tool (example: PostMan)
+  - Copy and paste each command used and place it in the `sling/README.md`
+- Upload the `helloworld.html` file to the `/apps/interview/helloworld` folder using only the Apache Sling POST servlet, which means you can only use curl or a restful tool (example: PostMan)
+  - Copy and paste each command used and place it in the `sling/README.md`
+- Create a `sling:OrderedFolder` under `/content` named interview and set the `sling:resourceType` to the component created in the step above (i.e set it to sling:resourceType = interview/helloworld)
+  - Copy and paste each command used and place it in the `sling/README.md`
 - If everything is created correctly you should be able to go to http://localhost:8080/content/interview.html and you will see `Hello World` being returned. Take a screen shot of it working in your browswer and add it under the sling/ folder.
 
 ### Bonus Question
