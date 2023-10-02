@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/firstaemproject/clientlibs"/>
+    <filter root="/apps/firstaemproject/components"/>
+    <filter root="/apps/firstaemproject/i18n"/>
+</workspaceFilter>
